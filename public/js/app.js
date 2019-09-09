@@ -12,3 +12,9 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 })()
+
+
+function teste(teste) {
+  console.log('ok');
+  return teste;  
+}

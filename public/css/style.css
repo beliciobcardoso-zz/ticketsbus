@@ -5,23 +5,75 @@
 }
 
 body{
+    background-color: #a4a8a8
 }
 
 #container{
     display: grid;
-    grid-template-columns: 400px;
-    grid-template-rows: 10vh 500px 10vh;
+    grid-template-columns: 300px;
+    grid-template-rows: 10vh 7vh 350px;
     grid-template-areas:
     "header"
-    "main"
-    "footer";
+    "menu"
+    "main";
+    grid-gap: 2px;
+    justify-content: center;
+}
+
+#novarecarga{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 10vh 400px;
+    grid-template-areas:
+    "header"
+    "main";
     grid-gap: 2px;
     justify-content: center;
 }
 
 header {
-    background-color: #0000ff;
+    background-color: #9d9df3;
+    padding: 5px 10px ;
     grid-area: header;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+header h1{
+    font-size: 37px;
+    font-weight: bold;
+}
+
+menu{
+    padding: 5px 10px;
+    background-color: #b0b0d8;
+    grid-area: menu;
+}
+
+ul{    
+    list-style: none;    
+}
+
+ul li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background: #fff;
+    float: left;
+    margin: 0px 3px;
+}
+
+ul li a:link {
+    color: #0601ff;
+    padding:  2px;
+    display: block;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color: #fff;
+    background: #0601ff;
 }
 
 main{
@@ -29,23 +81,14 @@ main{
     background-color: #d0d6d0a2
 }
 
-form{
-    padding: 1%;      
+.novarecarga{
+    width: auto;
+    height: auto;
+    background: #fff;
+    display: block;
+    font-size: 50px;
+    float: right;
 }
-
-fieldset{
-    padding: 1%;
-    margin: 1% 
-}
-
-#fielDadosPessoal{
-    width: 44%
-}
-#fielDadosPessoal > input{
-    width: 300px
-}
-
-footer{
-    background-color: #696969;
-    grid-area: footer;
+.novarecarga a:link{
+    text-decoration: none;
 }

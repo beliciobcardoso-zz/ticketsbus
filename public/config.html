@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Principal</title>
+</head>
+
+<body>
+    <div id="novarecarga">
+        <header>
+            <h1>Vale Transporte</h1>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Adicionar uma Recarga</legend>
+                    <h1></h1>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Data atual</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelect1">Qual o valor da recargar?</label>
+                        <input type="number" name="valor" id="valor" value="0.50">
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="teste">Confirmar</button>
+                    <button type="submit" class="btn btn-primary" onclick="teste">cancelar</button>
+                </fieldset>
+            </form>
+            <a href="./main.html">Cancelar</a>
+        </main>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
