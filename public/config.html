@@ -16,19 +16,21 @@
             <h1>Vale Transporte</h1>
         </header>
         <main>
-            <form>
+            <form id="formulario">
                 <fieldset>
-                    <legend>Adicionar uma Recarga</legend>
+                    <legend>Config</legend>
                     <h1></h1>
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-2 col-form-label">Data atual</label>
                     </div>
                     <div class="form-group">
-                        <label for="exampleSelect1">Qual o valor da recargar?</label>
-                        <input type="number" name="valor" id="valor" value="0.50">
+                        <label for="exampleSelect1">Qual o valor da Passagem?</label>
+                        <input type="number" name="valorPassagem" id="valorPassagem" value="4.00">
+                        <label for="exampleSelect1">Quantas Passagens por dia?</label>
+                        <input type="number" name="quantidadePassagem" id="quantidadePassagem" value="02">
                     </div>
-                    <button type="submit" class="btn btn-primary" onclick="teste">Confirmar</button>
-                    <button type="submit" class="btn btn-primary" onclick="teste">cancelar</button>
+                    <button type="submit" class="btn btn-primary" >Confirmar</button>
+                    <button type="reset" class="btn btn-primary" >cancelar</button>
                 </fieldset>
             </form>
             <a href="./main.html">Cancelar</a>
@@ -37,6 +39,7 @@
 
     <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/config.js"></script>
 </body>
 
 </html>
