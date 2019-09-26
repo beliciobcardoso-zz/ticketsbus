@@ -8,14 +8,34 @@ body{
     background-color: #a4a8a8
 }
 
+.novarecarga{
+    width: 50px;
+    height: 50px;
+    background: #0601ff;
+    font-size: 30px;
+    border-radius: 50%;
+    float: right;
+}
+
+.novarecarga a{
+    color: #fff;
+    padding: 0px;
+    margin: 0px
+}
+
+.novarecarga a:link{
+    text-decoration: none;
+}
+
 #container{
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 10vh 7vh 350px;
+    grid-template-rows: 7vh 5vh 40vh 1vh ;
     grid-template-areas:
     "header"
     "menu"
-    "main";
+    "main"
+    "bottom";
     grid-gap: 2px;
     justify-content: center;
 }
@@ -32,8 +52,8 @@ body{
 }
 
 header {
+    padding: 5px 10px;
     background-color: #9d9df3;
-    padding: 5px 10px ;
     grid-area: header;
 }
 
@@ -47,13 +67,13 @@ header h1{
 }
 
 menu{
-    padding: 5px 10px;
+    padding: 7px 11px;
     background-color: #b0b0d8;
     grid-area: menu;
 }
 
 ul{    
-    list-style: none;    
+    list-style: none; 
 }
 
 ul li{
@@ -78,17 +98,10 @@ ul li a:hover{
 
 main{
     grid-area: main;
-    background-color: #d0d6d0a2
+    background-color: #d0d6d0a2;
+    padding: 0px 7px;
 }
 
-.novarecarga{
-    width: auto;
-    height: auto;
-    background: #fff;
-    display: block;
-    font-size: 50px;
-    float: right;
-}
-.novarecarga a:link{
-    text-decoration: none;
+bottom{
+    grid-area: bottom;
 }
