@@ -30,7 +30,7 @@ body{
 #container{
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 7vh 5vh 40vh 1vh ;
+    grid-template-rows: 10vh 7vh 47vh 1vh ;
     grid-template-areas:
     "header"
     "menu"
@@ -43,7 +43,7 @@ body{
 #novarecarga{
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 10vh 400px;
+    grid-template-rows: 10vh 62vh;
     grid-template-areas:
     "header"
     "main";
