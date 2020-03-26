@@ -5,39 +5,45 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cosmo/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<title>Principal</title>
 </head>
 
 <body>
-	<div id="novarecarga">
+	<div id="container">
 		<header>
-			<h1>Vale Transporte</h1>
+			<h1 id="titulo"></h1>
 		</header>
 		<main>
+			<h1>Configuração</h1>
 			<form id="formulario">
 				<fieldset>
 					<legend>Ajuste de Configuração</legend>
-					<h1></h1>
 					<div class="form-group row">
 						<label id="data" class="col-sm-2 col-form-label"></label>
 					</div>
 					<div class="form-group">
 						<label for="exampleSelect1">Qual o valor da Passagem?</label>
-						<input type="number" name="valorPassagem" id="valorPassagem" placeholder="4.00">
+						<input type="number" name="valorPassagem" id="valorPassagem" placeholder="R$ 4,00">
 						<label for="exampleSelect1">Quantas Passagens por dia?</label>
 						<input type="number" name="quantidadePassagem" id="quantidadePassagem" placeholder="02">
 					</div>
-					<button type="submit" class="btn btn-primary">Confirmar</button>
-					<button type="reset" class="btn btn-primary">cancelar</button>
+					<input type="submit" class="btn btn-primary" value="Confirmar" />
+					<input type="reset" class="btn btn-primary" value="Limpar" />
 				</fieldset>
 			</form>
-			<a href="./main.html">Cancelar</a>
 		</main>
+		<bottom>
+			<ul>
+				<li><a href="./main.html">HOME</a></li>
+				<li><a href="./saldo.html">SALDO</a></li>
+				<li><a href="./recargas.html">RECARGAS</a></li>
+				<li><a href="./config.html">CONFIG</a></li>
+			</ul>
+		</bottom>
 	</div>
-
 	<script src="./js/config.js"></script>
+	<script src="./js/style.js"></script>
 </body>
 
 </html>
